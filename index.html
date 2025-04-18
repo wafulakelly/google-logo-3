@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search Bar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #e3f2fd; /* Light blue */
+        }
+        .search-container {
+            text-align: center;
+        }
+        .google-logo {
+            font-size: 48px;
+            font-weight: bold;
+            display: flex;
+            margin-left: 100px;
+            margin-bottom: 20px;
+        }
+        .google-logo .g {
+            color: #4285f4; /* Blue */
+        }
+        .google-logo .o1 {
+            color: #ea4335; /* Red */
+        }
+        .google-logo .o2 {
+            color: #fbbc05; /* Yellow */
+        }
+        .google-logo .g2 {
+            color: #34a853; /* Green */
+        }
+        .google-logo .l {
+            color: #ea4335; /* Red */
+        }
+        .google-logo .e {
+            color: #4285f4; /* Blue */
+        }
+        .search-input {
+            width: 400px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #d9d9d9;
+            border-radius: 20px;
+            outline: none;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+        }
+        .search-input:focus {
+            border-color: #1a73e8;
+            box-shadow: 0px 3px 10px rgba(26, 115, 232, 0.5);
+        }
+        .wafula {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        .wafula button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #1a73e8; /* Google blue */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .wafula button:hover {
+            background-color: #0b52b0; /* Darker blue */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .wafula p {
+            font-size: 14px;
+            color: #757575; /* Subtle text color */
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-container">
+        <div class="google-logo">
+            <span class="g">G</span>
+            <span class="o1">o</span>
+            <span class="o2">o</span>
+            <span class="g2">g</span>
+            <span class="l">l</span>
+            <span class="e">e</span>
+        </div>
+        <input type="text" class="search-input" placeholder="Search Google...">
+    </div>
+    <div class="wafula">
+        <button>Google Search</button>
+        <button>I'm Feeling Lucky</button>
+    </div>
+    <p>Google also provided in Kiswahili</p>
+</body>
+</html>
